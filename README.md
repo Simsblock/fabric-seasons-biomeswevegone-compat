@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/a/ywPlHXL.png"></p>
+<p align="center"><img src="https://i.imgur.com/Eyagd8i.png"></p>
 <h3 align="center">Fabric Seasons: BiomesWeveGone Compat</h3>
 <p align="center">A simple mod that adds compatibility between Oh The Biomes We've Gone and Fabric Seasons.</p>
 <p align="center">
@@ -31,6 +31,6 @@ No, I made this for 1.20.1, the only time I'll consider updating this are:
 **Assets** are All Rights Reserved by the BYG Team.
 
 ## Build
-If you want to build this yourself, please clone the repository and execute `gradlew build` in the projects folder. 
+[//]: <> (If you want to build this yourself, please clone the repository and execute `gradlew build` in the projects folder.)
 
-Artifacts will be generated at `/build/libs`
+[//]: <> (Artifacts will be generated at `/build/libs`)
