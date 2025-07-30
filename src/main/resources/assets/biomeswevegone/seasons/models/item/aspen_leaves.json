@@ -1,16 +1,16 @@
 {
   "textures": {
     "summer": {
-      "all": "byg:block/aspen/summer_leaves",
-      "particle": "byg:block/aspen/summer_leaves"
+      "all": "biomeswevegone:block/aspen/summer_leaves",
+      "particle": "biomeswevegone:block/aspen/summer_leaves"
     },
     "fall": {
-      "all": "byg:block/aspen/fall_leaves",
-      "particle": "byg:block/aspen/fall_leaves"
+      "all": "biomeswevegone:block/aspen/fall_leaves",
+      "particle": "biomeswevegone:block/aspen/fall_leaves"
     },
     "winter": {
-      "all": "byg:block/aspen/winter_leaves",
-      "particle": "byg:block/aspen/winter_leaves"
+      "all": "biomeswevegone:block/aspen/winter_leaves",
+      "particle": "biomeswevegone:block/aspen/winter_leaves"
     }
   }
 }

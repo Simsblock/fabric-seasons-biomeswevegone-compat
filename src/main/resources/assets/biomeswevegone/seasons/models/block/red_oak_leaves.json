@@ -1,16 +1,16 @@
 {
   "textures": {
     "summer": {
-      "all": "byg:block/summer_oak_leaves_red",
-      "particle": "byg:block/summer_oak_leaves_red"
+      "all": "biomeswevegone:block/summer_oak_leaves_red",
+      "particle": "biomeswevegone:block/summer_oak_leaves_red"
     },
     "fall": {
-      "all": "byg:block/fall_oak_leaves_red",
-      "particle": "byg:block/fall_oak_leaves_red"
+      "all": "biomeswevegone:block/fall_oak_leaves_red",
+      "particle": "biomeswevegone:block/fall_oak_leaves_red"
     },
     "winter": {
-      "all": "byg:block/winter_oak_leaves_red",
-      "particle": "byg:block/winter_oak_leaves_red"
+      "all": "biomeswevegone:block/winter_oak_leaves_red",
+      "particle": "biomeswevegone:block/winter_oak_leaves_red"
     }
   }
 }

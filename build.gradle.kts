@@ -31,10 +31,10 @@ java {
 
 version = project["mod_version"]
 group = project["maven_group"]
-base.archivesName.set("${name.split("-").let{it.subList(0, it.size-1)}.joinToString("-")}-${project["byg_version"]}-compat")
+base.archivesName.set("${name.split("-").let{it.subList(0, it.size-1)}.joinToString("-")}-${project["biomeswevegone_version"]}-compat")
 
 val environment: Map<String, String> = System.getenv()
-val releaseName = "${name.split("-").let{it.subList(0, it.size-2)}.joinToString(" ") { it.capitalize() }} Compat: ${name.split("-").let { it.subList(0, it.size-1) }.last().capitalize()} ${project["byg_version"]}"
+val releaseName = "${name.split("-").let{it.subList(0, it.size-2)}.joinToString(" ") { it.capitalize() }} Compat: ${name.split("-").let { it.subList(0, it.size-1) }.last().capitalize()} ${project["biomeswevegone_version"]}"
 val releaseType = "RELEASE"
 val releaseFile = "${buildDir}/libs/${base.archivesName.get()}-${version}.jar"
 val cfGameVersion = project["seasons_version"].split("+")[1].let{ if(!project["minecraft_version"].contains("-") && project["minecraft_version"].startsWith(it)) project["minecraft_version"] else "$it-Snapshot"}
@@ -70,12 +70,11 @@ repositories {
         url = uri("https://maven.shedaniel.me/")
     }
     maven {
-        name = "Curse Maven"
-        url = uri("https://cursemaven.com")
-    }
-    maven {
         name = "Cafeteria"
         url = uri("https://maven.cafeteria.dev/releases")
+    }
+    maven {
+        url = uri("https://api.modrinth.com/maven")
     }
     mavenLocal()
 }
@@ -87,17 +86,18 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:${project["loader_version"]}")
 
     modImplementation("io.github.lucaargolo:fabric-seasons:${project["seasons_version"]}")
-    modImplementation("curse.maven:oh-the-biomes-youll-go-fabric-${project["byg_id"]}:${project["byg_file"]}")
+    //modImplementation("maven.modrinth:${property("biomeswevegone_modrinth_id")}:${property("biomeswevegone_version")}")
+    modImplementation("maven.modrinth:oh-the-biomes-weve-gone:1.6.3-Fabric")
 }
 
 tasks.processResources {
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
 
-    inputs.property("version", "${project.version}-${project["byg_version"]}")
+    inputs.property("version", "${project.version}-${project["biomeswevegone_version"]}")
 
     from(sourceSets["main"].resources.srcDirs) {
         include("fabric.mod.json")
-        expand(mutableMapOf("version" to "${project.version}-${project["byg_version"]}"))
+        expand(mutableMapOf("version" to "${project.version}-${project["biomeswevegone_version"]}"))
     }
 
     from(sourceSets["main"].resources.srcDirs) {
@@ -139,37 +139,8 @@ task("github") {
     }
 }
 
-//Curseforge publishing
-curseforge {
-    environment["CURSEFORGE_API_KEY"]?.let { apiKey = it }
-
-    project(closureOf<CurseProject> {
-        id = project["curseforge_id"]
-        changelog = getChangeLog()
-        releaseType = this@Build_gradle.releaseType.toLowerCase()
-        addGameVersion(cfGameVersion)
-        addGameVersion("Fabric")
-
-        mainArtifact(file(releaseFile), closureOf<CurseArtifact> {
-            displayName = releaseName
-            relations(closureOf<CurseRelation> {
-                requiredDependency("fabric-seasons")
-                requiredDependency("oh-the-biomes-youll-go-fabric")
-            })
-        })
-
-        afterEvaluate {
-            uploadTask.dependsOn("remapJar")
-        }
-
-    })
-
-    options(closureOf<Options> {
-        forgeGradleIntegration = false
-    })
-}
-
 //Modrinth publishing
+/*
 modrinth {
     environment["MODRINTH_TOKEN"]?.let { token.set(it) }
 
@@ -187,9 +158,9 @@ modrinth {
 
     dependencies {
         required.project("fabric-seasons")
-        required.project("biomesyougo")
+        required.project("oh-the-biomes-weve-gone")
     }
 }
 tasks.modrinth.configure {
     group = "upload"
-}
+}*/

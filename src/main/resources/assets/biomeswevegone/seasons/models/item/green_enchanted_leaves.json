@@ -1,16 +1,16 @@
 {
   "textures": {
     "summer": {
-      "all": "byg:block/green_enchanted/summer_leaves",
-      "particle": "byg:block/green_enchanted/summer_leaves"
+      "all": "biomeswevegone:block/green_enchanted/summer_leaves",
+      "particle": "biomeswevegone:block/green_enchanted/summer_leaves"
     },
     "fall": {
-      "all": "byg:block/green_enchanted/fall_leaves",
-      "particle": "byg:block/green_enchanted/fall_leaves"
+      "all": "biomeswevegone:block/green_enchanted/fall_leaves",
+      "particle": "biomeswevegone:block/green_enchanted/fall_leaves"
     },
     "winter": {
-      "all": "byg:block/green_enchanted/winter_leaves",
-      "particle": "byg:block/green_enchanted/winter_leaves"
+      "all": "biomeswevegone:block/green_enchanted/winter_leaves",
+      "particle": "biomeswevegone:block/green_enchanted/winter_leaves"
     }
   }
 }

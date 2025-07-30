@@ -1,14 +1,14 @@
-package io.github.lucaargolo.seasonsbygcompat;
+package io.github.Simsblock.seasonsbiomeswevegonecompat;
 
 import io.github.lucaargolo.seasons.FabricSeasons;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.Version;
 
-public class FabricSeasonsBYGCompat implements ModInitializer {
+public class FabricSeasonsBiomesWeveGoneCompat implements ModInitializer {
 
-    private static final String MOD_ID = "seasonsbygcompat";
-    private static final String DEP_ID = "byg";
+    private static final String MOD_ID = "seasonsbiomeswevegonecompat";
+    private static final String DEP_ID = "oh-the-biomes-weve-gone";
 
     @Override
     public void onInitialize() {

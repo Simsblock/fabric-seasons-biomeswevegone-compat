@@ -1,16 +1,16 @@
 {
   "textures": {
     "summer": {
-      "all": "byg:block/holly/summer_leaves",
-      "particle": "byg:block/holly/summer_leaves"
+      "all": "biomeswevegone:block/holly/summer_leaves",
+      "particle": "biomeswevegone:block/holly/summer_leaves"
     },
     "fall": {
-      "all": "byg:block/holly/fall_leaves",
-      "particle": "byg:block/holly/fall_leaves"
+      "all": "biomeswevegone:block/holly/fall_leaves",
+      "particle": "biomeswevegone:block/holly/fall_leaves"
     },
     "winter": {
-      "all": "byg:block/holly/winter_leaves",
-      "particle": "byg:block/holly/winter_leaves"
+      "all": "biomeswevegone:block/holly/winter_leaves",
+      "particle": "biomeswevegone:block/holly/winter_leaves"
     }
   }
 }

@@ -1,16 +1,16 @@
 {
   "textures": {
     "summer": {
-      "all": "byg:block/redwood/summer_leaves",
-      "particle": "byg:block/redwood/summer_leaves"
+      "all": "biomeswevegone:block/redwood/summer_leaves",
+      "particle": "biomeswevegone:block/redwood/summer_leaves"
     },
     "fall": {
-      "all": "byg:block/redwood/fall_leaves",
-      "particle": "byg:block/redwood/fall_leaves"
+      "all": "biomeswevegone:block/redwood/fall_leaves",
+      "particle": "biomeswevegone:block/redwood/fall_leaves"
     },
     "winter": {
-      "all": "byg:block/redwood/winter_leaves",
-      "particle": "byg:block/redwood/winter_leaves"
+      "all": "biomeswevegone:block/redwood/winter_leaves",
+      "particle": "biomeswevegone:block/redwood/winter_leaves"
     }
   }
 }

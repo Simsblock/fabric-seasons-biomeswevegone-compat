@@ -1,40 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "seasonsbygcompat",
+  "id": "seasonsbiomeswevegonecompat",
   "version": "${version}",
-  "name": "Fabric Seasons: BYG Compat",
-  "description": "Oh The Biomes You'll Go compatibility for Fabric Seasons",
+  "name": "Fabric Seasons: biomeswevegone Compat",
+  "description": "Oh The Biomes We've Gone compatibility for Fabric Seasons",
   "authors": [
-    "D4rkness_King"
+    "D4rkness_King",
+    "Simsblock"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/fabric-seasons-byg-compat",
-    "sources": "https://github.com/lucaargolo/fabric-seasons-byg-compat",
-    "issues": "https://github.com/lucaargolo/fabric-seasons-byg-compat/issues"
+    "sources": "https://github.com/lucaargolo/fabric-seasons-biomeswevegone-compat",
+    "issues": "https://github.com/lucaargolo/fabric-seasons-biomeswevegone-compat/issues"
   },
   "license": "Mozilla Public License 2.0",
-  "icon": "assets/seasonsbygcompat/icon.png",
+  "icon": "assets/seasonsbiomeswevegonecompat/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.lucaargolo.seasonsbygcompat.FabricSeasonsBYGCompat"
+      "io.github.Simsblock.seasonsbiomeswevegonecompat.FabricSeasonsBiomesWeveGoneCompat"
     ]
   },
-  "mixins": [
-    "seasonsbygcompat.mixins.json"
-  ],
   "depends": {
-    "seasons": ">=2.0-BETA",
-    "byg": ">=2.0.1.1"
-  },
-  "custom": {
-    "modmenu": {
-      "links": {
-        "modmenu.discord": "https://discord.com/invite/G4PjhEf"
-      },
-      "parent": {
-        "id": "seasons"
-      }
-    }
+    "seasons": "2.4.2-BETA+1.20",
+    "biomeswevegone": "1.6.3"
   }
 }

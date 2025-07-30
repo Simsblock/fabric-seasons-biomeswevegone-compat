@@ -1,16 +1,16 @@
 {
   "textures": {
     "summer": {
-      "all": "byg:block/cypress/summer_leaves",
-      "particle": "byg:block/cypress/summer_leaves"
+      "all": "biomeswevegone:block/cypress/summer_leaves",
+      "particle": "biomeswevegone:block/cypress/summer_leaves"
     },
     "fall": {
-      "all": "byg:block/cypress/fall_leaves",
-      "particle": "byg:block/cypress/fall_leaves"
+      "all": "biomeswevegone:block/cypress/fall_leaves",
+      "particle": "biomeswevegone:block/cypress/fall_leaves"
     },
     "winter": {
-      "all": "byg:block/cypress/winter_leaves",
-      "particle": "byg:block/cypress/winter_leaves"
+      "all": "biomeswevegone:block/cypress/winter_leaves",
+      "particle": "biomeswevegone:block/cypress/winter_leaves"
     }
   }
 }
